@@ -4,6 +4,8 @@ import React from 'react';
 import ImageGallery from './Mern-01/session3/imageGallery';
 import FCOne from './Mern-01/session4/FCOne';
 import FCUseEffect from './Mern-01/session5/FCUseEffect';
+import Ref from './Mern-01/session6/Ref';
+import Debouncing from './Mern-01/session6/Debouncing';
 
 class App extends React.Component {
   constructor(){
@@ -24,7 +26,9 @@ class App extends React.Component {
         {this.state.showComponent && <LifeCycleMethod />} */}
         {/* <ImageGallery/> */}
         {/* <FCOne/> */}
-        <FCUseEffect/>
+        {/* <FCUseEffect/> */}
+        {/* <Ref/> */}
+        <Debouncing/>
     </div>
     );      
   }
