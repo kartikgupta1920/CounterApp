@@ -1,0 +1,9 @@
+Interview Question 
+
+- two component - Albums, photos
+- Album coponents - Fetch albums from API
+- Fetch Albms in useEffect
+- Plug Routing to change the URL when clicking on albums
+- Navigate to photos 
+- Fetch photos API 
+- Sync URL with data in Photos Component 
