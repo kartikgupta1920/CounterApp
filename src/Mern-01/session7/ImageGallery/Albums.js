@@ -5,8 +5,8 @@ const Albums = () => {
     const handleFetchAlbum = async() =>{
         try{
             const reponse = await fetch('https://jsonplaceholder.typicode.com/albums');
-          const albumData = await reponse.json();
-          setAlbums(albumData);
+            const albumData = await reponse.json();
+            setAlbums(albumData);
         } catch(e){
          console.log('Error', e);
         }
@@ -19,14 +19,16 @@ const Albums = () => {
             <center>
                 <h1>Image Gallery</h1>
             </center>
-            {albums.map(album) => {
+            {albums.map((album) => {
                 return(
-
-                )
-
-            }}
+                    <div key={album.id}>
+                        <p>Album Id: {album.id}</p>
+                        <p>Album Title: {album.title}</p>
+                    </div>
+                );
+            })}
             </div>
-    )
+    );
 };
 
 export default Albums;
