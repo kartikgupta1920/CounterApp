@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Albums = () => {
     const [albums, setAlbums] = useState([]);
@@ -21,10 +22,10 @@ const Albums = () => {
             </center>
             {albums.map((album) => {
                 return(
-                    <div key={album.id}>
+                    <Link to={`photos/${album.id}`} key={album.id}>
                         <p>Album Id: {album.id}</p>
                         <p>Album Title: {album.title}</p>
-                    </div>
+                    </Link>
                 );
             })}
             </div>

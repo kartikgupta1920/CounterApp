@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 const Photos = () => {
     const [photos, setPhoto] = useState([]);
+    const {id} = useParams();
     const handleFetchPhotos = async()=>{
         try{
         const reponse = await fetch('https://jsonplaceholder.typicode.com/photos');
         const photosData = await reponse.json();
-        setPhoto(photosData);
+        const filterPhotoData = photosData.filter((photo) => photo.albumId === Number(id));
+        setPhoto(filterPhotoData);
         } catch(e){
             console.log('Error', e);
         }
