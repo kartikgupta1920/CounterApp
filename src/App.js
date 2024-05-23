@@ -7,6 +7,7 @@ import FCUseEffect from './Mern-01/session5/FCUseEffect';
 import Ref from './Mern-01/session6/Ref';
 import Debouncing from './Mern-01/session6/Debouncing';
 import Home from './Mern-01/session7/ImageGallery/Home';
+import Fragments from './Mern-01/session8/Fragments';
 
 class App extends React.Component {
   constructor(){
@@ -17,7 +18,7 @@ class App extends React.Component {
   }
   render(){
     return( 
-    <div>
+    <>
      {/* <button 
         onClick={()=>
           this.setState((prev) => ({showComponent: !prev.showComponent}))
@@ -30,8 +31,9 @@ class App extends React.Component {
         {/* <FCUseEffect/> */}
         {/* <Ref/> */}
         {/* <Debouncing/> */}
-        <Home/>
-    </div>
+        {/* <Home/> */}
+        <Fragments/>
+    </>
     );      
   }
 }
