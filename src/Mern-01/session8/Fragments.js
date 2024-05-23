@@ -18,7 +18,7 @@ const Fragments = () => {
         {
             LIST_ITEMS.map((item) => {
                 return (
-                    <Fragment key={item.name}>
+                    <Fragment key={item.name}>                        
                     <p>{item.name}</p>
                     <p>{item.value}</p>
                     </Fragment>
