@@ -8,6 +8,7 @@ import Ref from './Mern-01/session6/Ref';
 import Debouncing from './Mern-01/session6/Debouncing';
 import Home from './Mern-01/session7/ImageGallery/Home';
 import Fragments from './Mern-01/session8/Fragments';
+import CallBack from './Mern-01/session8/Callback';
 
 class App extends React.Component {
   constructor(){
@@ -32,7 +33,8 @@ class App extends React.Component {
         {/* <Ref/> */}
         {/* <Debouncing/> */}
         {/* <Home/> */}
-        <Fragments/>
+        {/* <Fragments/> */}
+        <CallBack/>
     </>
     );      
   }
