@@ -32,9 +32,9 @@ class App extends React.Component {
         {/* <FCUseEffect/> */}
         {/* <Ref/> */}
         {/* <Debouncing/> */}
-        {/* <Home/> */}
+        <Home/>
         {/* <Fragments/> */}
-        <CallBack/>
+        {/* <CallBack/> */}
     </>
     );      
   }

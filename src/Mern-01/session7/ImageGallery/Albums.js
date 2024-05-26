@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import {AppBar, Toolbar, Typography} from '@mui/material' ;
 
 const Albums = () => {
     const [albums, setAlbums] = useState([]);
@@ -17,9 +18,13 @@ const Albums = () => {
     }, []);
     return(
          <div>
-            <center>
-                <h1>Image Gallery</h1>
-            </center>
+            <AppBar position="static">
+                <Toolbar variant="dense">
+                    <Typography variant="h6" color="inherit" component="div">
+                        Image Gallery
+                    </Typography>
+                </Toolbar>
+            </AppBar>
             {albums.map((album) => {
                 return(
                     <Link to={`photos/${album.id}`} key={album.id}>
