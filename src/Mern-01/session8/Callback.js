@@ -39,3 +39,21 @@ const CallBack = () => {
 };
 
 export default CallBack;
+
+const CallBack = () => {
+    const [counter, setCounter] =useState([0, 0, 0]);
+
+    const handleIncrementCounter = useCallback((index) => {
+        setCounter((prevValue) =>{
+            const newCounter = [...prevValue];
+            newCounter[index]++;
+            return newCounter;
+        });
+    }, []);
+    return (
+        <ListOfCounters counter={counter}
+        handleIncrementCounter = {handleIncrementCounter}/>
+    );
+};
+
+export default CallBack;
